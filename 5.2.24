@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+void kopiuj(const char *src, char *dest){
+    int i = 0;
+    while (true) {
+        dest[i] = src[i];
+        if (src[i] == '\0') return;
+        i++;
+    }
+}
+
+void kopiuj2(const char *src, char *dest) {
+    int i = 0;
+    while (true) {
+        dest[i] = src[i];
+        if (src[i] == '\0') return;
+        i++;
+    }
+}
+
+int main()
+{
+    char st_string[64];
+    wchar_t nd_string[64];
+
+    kopiuj("1szy",st_string);
+    kopiuj2(" 2gi",nd_string);
+
+    cout << "1szy napis: " << st_string << endl;
+    cout << "2gi napis: " << nd_string << endl;
+
+    return 0;
+}
