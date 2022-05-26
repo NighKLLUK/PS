@@ -1,18 +1,13 @@
 #include <iostream>
-
 using namespace std;
 
-double * funkcja(int n)
-{
+double * funkcja(int n){
     double * block = new double[n];
     return block;
 }
-
-int main()
-{
+int main(){
     int n = 5;
     double * block = funkcja(n);
-
     delete [] block;
     return 0;
 }
