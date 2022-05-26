@@ -1,0 +1,28 @@
+#include <stdio.h>
+int funkcja(int *tab)
+{
+  int min = 0;
+  int max = 0;
+  for (i=0;i<5;i++) 
+  {
+    if (tab[i]>max)
+    max=tab[i];
+    if (tab[i]<min)
+    min=tab[i]; 
+  return max-min;
+}
+
+int main () {
+    int tab[5]={1,2,3,4,5};
+    int i;
+
+
+    printf("tablica:");
+    for(i=0;i<5;i++)
+    {
+    printf("%d",tab[i]);
+    }
+  
+    printf("\nmax-min: %d\n", funkcja(tab));
+    return 0;
+    }
