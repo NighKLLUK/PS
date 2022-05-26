@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+double *alokuj(unsigned int n){
+return malloc(n*sizeof(double));
+}
+
+int main(){
+unsigned int a= 5;
+printf(alokuj(a));
+}
