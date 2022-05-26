@@ -1,11 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 
-double *alokuj(unsigned int n){
-return malloc(n*sizeof(double));
+using namespace std;
+
+double * funkcja(int n)
+{
+    double * block = new double[n];
+    return block;
 }
 
-int main(){
-unsigned int a= 5;
-printf(alokuj(a));
+int main()
+{
+    int n = 5;
+    double * block = funkcja(n);
+
+    delete [] block;
+    return 0;
 }
